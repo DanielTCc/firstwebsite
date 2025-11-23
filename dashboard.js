@@ -81,18 +81,22 @@ const topProducts = [
     { name: "Cámara Digital 4K", units: 24, revenue: 19199.76 }
 ];
 
+// Store metrics
+const storeMetrics = {
+    totalCustomers: 156
+};
+
 // Calculate statistics
 function calculateStats() {
     const totalSales = salesData.reduce((sum, sale) => sum + sale.total, 0);
     const totalProducts = salesData.reduce((sum, sale) => sum + sale.quantity, 0);
     const totalOrders = salesData.filter(sale => sale.status === "completed").length;
-    const totalCustomers = 156; // Sample static number
 
     return {
         totalSales,
         totalProducts,
         totalOrders,
-        totalCustomers
+        totalCustomers: storeMetrics.totalCustomers
     };
 }
 

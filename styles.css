@@ -9,11 +9,16 @@
     --primary-color: #2c3e50;
     --secondary-color: #34495e;
     --accent-color: #3498db;
+    --accent-color-hover: #2980b9;
     --text-color: #333;
     --light-bg: #f8f9fa;
     --white: #ffffff;
     --border-color: #e0e0e0;
     --success-color: #27ae60;
+    --status-success-bg: #d4edda;
+    --status-success-text: #155724;
+    --status-pending-bg: #fff3cd;
+    --status-pending-text: #856404;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -105,7 +110,7 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #2980b9;
+    background-color: var(--accent-color-hover);
 }
 
 /* Features Section */
@@ -305,13 +310,13 @@ body {
 }
 
 .status-completed {
-    background-color: #d4edda;
-    color: #155724;
+    background-color: var(--status-success-bg);
+    color: var(--status-success-text);
 }
 
 .status-pending {
-    background-color: #fff3cd;
-    color: #856404;
+    background-color: var(--status-pending-bg);
+    color: var(--status-pending-text);
 }
 
 /* Top Products List */
