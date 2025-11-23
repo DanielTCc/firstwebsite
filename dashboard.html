@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Ventas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">TiendaOnline</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalog.html">Catálogo</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="dashboard-header">
+            <h1>Dashboard de Ventas</h1>
+            <p>Estadísticas y métricas de la tienda</p>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Ventas</h3>
+                <p class="stat-value" id="totalSales">$0</p>
+                <span class="stat-label">Este mes</span>
+            </div>
+            <div class="stat-card">
+                <h3>Productos Vendidos</h3>
+                <p class="stat-value" id="totalProducts">0</p>
+                <span class="stat-label">Unidades</span>
+            </div>
+            <div class="stat-card">
+                <h3>Pedidos</h3>
+                <p class="stat-value" id="totalOrders">0</p>
+                <span class="stat-label">Completados</span>
+            </div>
+            <div class="stat-card">
+                <h3>Clientes</h3>
+                <p class="stat-value" id="totalCustomers">0</p>
+                <span class="stat-label">Activos</span>
+            </div>
+        </section>
+
+        <section class="sales-section">
+            <h2>Ventas Recientes</h2>
+            <div class="sales-table-container">
+                <table class="sales-table">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="salesTableBody">
+                        <!-- Sales data will be loaded here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="top-products">
+            <h2>Productos Más Vendidos</h2>
+            <div class="top-products-list" id="topProductsList">
+                <!-- Top products will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TiendaOnline. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
